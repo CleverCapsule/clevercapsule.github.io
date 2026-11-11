@@ -37,9 +37,9 @@
 <section class="support" id="support">
   <div>
     <h2>Support</h2>
-    <p>Fragen, Fehler gefunden oder ein Kauf ist nicht angekommen? Schreib uns: <span class="ph">[E-MAIL]</span></p>
+    <p>Fragen, Fehler gefunden oder ein Kauf ist nicht angekommen? Schreib uns: <a class="js-mail mail" href="#" data-m="ZWQuZWx1c3BhY3JldmVsY0B0cm9wcHVz">&#115;&#117;&#112;&#112;&#111;&#114;&#116;<span class="at"></span>&#99;&#108;&#101;&#118;&#101;&#114;&#99;&#97;&#112;&#115;&#117;&#108;&#101;&#46;&#100;&#101;</a></p>
   </div>
-  
+  <a class="js-mail btn" href="#" data-m="ZWQuZWx1c3BhY3JldmVsY0B0cm9wcHVz">E-Mail schreiben</a>
 </section>
 <p class="hint">Tipp: Gekaufte Artikel stellst du in Gravity Flip unter <b>Settings → Restore Purchases</b> wieder her,
 deine Werbe-Einwilligung änderst du unter <b>Settings → Privacy Settings</b>. Bitte nenne bei Anfragen dein iPhone-Modell und die iOS-Version.</p>
@@ -51,6 +51,7 @@ deine Werbe-Einwilligung änderst du unter <b>Settings → Privacy Settings</b>.
 </div>
 
 </div></main>
+<script>document.querySelectorAll('.js-mail').forEach(function(a){var m=atob(a.dataset.m).split('').reverse().join('');a.href='mailto:'+m;});</script>
 <footer><div class="wrap"><span class="fb"><img src="img/studio-mark.png" alt="">© 2026 CleverCapsule Studios</span><nav><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="nutzungsbedingungen.html">Nutzungsbedingungen</a><a href="index.html#support">Support</a></nav></div></footer>
 </body>
 </html>

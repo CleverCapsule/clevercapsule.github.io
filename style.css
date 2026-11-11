@@ -117,3 +117,6 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap} footer a{color:#DCE6FF}
   .game{grid-template-columns:1fr;text-align:center}.game .icon{margin:0 auto}.btns,.tags{justify-content:center}
   .support{grid-template-columns:1fr;text-align:center}
 }
+
+/* E-Mail-Schutz: das @ steht nicht im HTML, sondern kommt per CSS */
+.at::after{content:"@"}
