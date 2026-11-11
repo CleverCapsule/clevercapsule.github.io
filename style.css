@@ -120,3 +120,13 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap} footer a{color:#DCE6FF}
 
 /* E-Mail-Schutz: das @ steht nicht im HTML, sondern kommt per CSS */
 .at::after{content:"@"}
+
+/* Support: aufklappbare Fragen */
+.faq{border:1px solid var(--line);border-radius:14px;margin:10px 0;background:#F8FAFE;overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:14px 46px 14px 18px;font-weight:700;color:var(--ink);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:22px;font-weight:400;color:var(--blue)}
+.faq[open] summary::after{content:"–"}
+.faq[open] summary{border-bottom:1px solid var(--line);background:#fff}
+.faq div{padding:12px 18px 16px;color:var(--text)}
+.support .btns{justify-content:flex-end}
